@@ -1,2 +1,2 @@
-mod permissions;
-mod reports;
+pub mod permissions;
+pub mod reports;
