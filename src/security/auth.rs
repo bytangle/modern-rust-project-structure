@@ -1,3 +1,5 @@
+use crate::accounts::admin::permissions;
+
 pub struct Auth;
 
 impl Auth {
@@ -7,5 +9,6 @@ impl Auth {
 }
 
 pub fn login() {
+  permissions::check_permissions();
   Auth::login();
 }

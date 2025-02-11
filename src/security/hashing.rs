@@ -1,3 +1,4 @@
+use super::auth;
 pub struct Hashing;
 
 impl Hashing {
@@ -7,5 +8,7 @@ impl Hashing {
 }
 
 pub fn hash_password() {
+  auth::login();
+
   Hashing::hash();
 }
